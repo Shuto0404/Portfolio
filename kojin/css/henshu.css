@@ -1,0 +1,126 @@
+h2 {
+    color: #364e96;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+    text-align: center;
+    font-size: 30px;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: rgb(255, 255, 255);
+  }
+  h1 {
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+  }
+  h3 {
+    margin: 0px;
+    padding: 0px;
+    color: #999;
+  }
+  
+  div.wrap {
+    width: 500px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+  }
+  
+  div.wrap div {
+    position: relative;
+    margin: 50px 0;
+  }
+  
+  label {
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    margin-top: 13.5px;
+    margin-left:10px;
+    padding: 0 10px;
+    background-color: #2589d0;
+    -webkit-transition: top .2s ease-in-out, 
+                        font-size .2s ease-in-out;
+    transition: top .2s ease-in-out, 
+                font-size .2s ease-in-out;
+  }
+  
+  .active {
+    top: -30px;
+    font-size: 20px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #2589d0;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  } 
+  
+  input[type=text]:focus {
+    outline: none;
+  }
+
+
+  /* 送信ボタン */
+  .sousin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    margin:0 auto;
+    padding: .9em 2em;
+    overflow: hidden;
+    border: 1px solid #2589d0;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2589d0;
+    font-size: 1em;
+}
+
+.sousin:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.sousin::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background-color: #2589d0;
+    content: '';
+    transition: width .3s ease;
+}
+
+.sousin:hover::before {
+    width: 100%;
+}
+
+.sousin::after {
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-top: 2px solid #2589d0;
+    border-right: 2px solid #2589d0;
+    content: '';
+}
+
+.sousin:hover::after {
+    border-color: #fff;
+}
+.setumei{
+  color: black;
+}
